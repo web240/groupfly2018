@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{518E28F8-350E-46D4-8C83-6F343FCA6F53}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>GroupflyGroup.FrontEnd.ObjectFramework</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GroupflyGroup.Platform.ObjectFramework">
+      <HintPath>E:\个人\groupflygroup.frontend\GroupflyGroup.FrontEnd\GroupflyGroup.FrontEnd.Web\bin\GroupflyGroup.Platform.ObjectFramework-cleaned.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\v4.0_4.0.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>E:\个人\groupflygroup.frontend\GroupflyGroup.FrontEnd\GroupflyGroup.FrontEnd.Web\bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.ComponentModel.Composition\v4.0_4.0.0.0__b77a5c561934e089\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>E:\个人\groupflygroup.frontend\GroupflyGroup.FrontEnd\GroupflyGroup.FrontEnd.Web\bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="GroupflyGroup.Platform.Extension">
+      <HintPath>E:\个人\groupflygroup.frontend\GroupflyGroup.FrontEnd\GroupflyGroup.FrontEnd.Web\bin\GroupflyGroup.Platform.Extension-cleaned.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.EventListener\DoFrontEndModelingEventListener.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeArticleCategoryIDs.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeCharacterIDs.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeCharacterNames.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeFileIDs.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeFilterIDs.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeKlassIDs.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeKlassNames.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeListIDs.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeListNames.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeLogoIDs.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeMenuItemIDs.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeMenuItemNames.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FePropertyNames.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeRelationshipIDs.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeRelationshipNames.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeSystemConfigurationIDs.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeValueIDs.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework.Strings\FeValueValues.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeArticle.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeArticleCategory.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeArticleCategorySeoKey.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeArticleCharacter.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeArticleComment.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeArticleSeoKey.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeArticleTag.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeChannel.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeChannelSeoKey.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeCharacter.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeComment.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeFile.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeImageSize.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeImageType.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeImageTypeImageSize.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeLogo.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeSeoKey.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeTag.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeTemplate.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeTemplateComponent.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FeWatermark.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\FileOperate.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\GZipUtil.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\UnZipUtil.cs" />
+    <Compile Include="GroupflyGroup.FrontEnd.ObjectFramework\ZipUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

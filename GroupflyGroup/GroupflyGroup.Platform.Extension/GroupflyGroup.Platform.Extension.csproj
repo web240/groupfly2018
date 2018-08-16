@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{3E8277DE-004A-49BC-9E05-8C04A2FE5F20}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>GroupflyGroup.Platform.Extension</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.ComponentModel.Composition\v4.0_4.0.0.0__b77a5c561934e089\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class0.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension.Doc.Internal\ICustomAttributeProviderExtension.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension.Doc.Internal\ReflectedDescriptorFactory.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension.Doc.Internal\ReflectedEventContextDescriptor.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension.Doc.Internal\ReflectedEventListenerDescriptor.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension.Doc.Internal\ReflectedPropertyDescriptor.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension.Doc.Internal\StaticPropertyDescriptor.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension.Doc\DescriptorFactory.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension.Doc\EventContextDescriptor.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension.Doc\EventListenerDescriptor.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension.Doc\PropertyDescriptor.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\AfterDoEventListener.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\AfterDoExtensionPoint.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\BeforeDoEventListener.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\BeforeDoExtensionPoint.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\CommonDescription.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\CreateComponentEventListener.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\CreateComponentExtensionPoint.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\CreateComponentsExtensionPoint.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\DoEventListener.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\DoExtensionPoint.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\Event.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\EventListener.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\EventMetadataAttribute.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\ExtensionPoint.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\NullEvent.cs" />
+    <Compile Include="GroupflyGroup.Platform.Extension\TriggerWhenAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
